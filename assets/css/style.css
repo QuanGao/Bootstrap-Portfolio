@@ -1,3 +1,11 @@
+/*keep these the same*/
+.col-sm-12 {
+	padding-right: 0px;
+}
+
+.col-2 {
+	padding-left: 0px;
+}
 
 .nav a {
 	font-size: 18px;
@@ -8,80 +16,115 @@
 	color: #4E5D6C;
 }
 
-.intro a:hover {
+.intro a:hover, .projects h2:hover {
 	color: #DF691A;
 	font-weight: bold;
 }
 
-.page-header {
-	padding-left: 20px;
+aside h1 {
+	animation-name: exampleC;
+    animation-duration: 5s;
+    animation-iteration-count: 3;
 }
 
-.page-header h1 {
-	font-size: 40px;
+@keyframes exampleC {
+    from {color: orange;}
+    to {color: white;}
 }
 
 h1 {
 	font-family: serif;
 	font-size: 30px;
+	text-align: center;
+}
+
+/*works for viewport that is 400-767px in width*/
+.container-fluid {
+	margin-bottom: 100px;
+	padding-left: 0px;
+}
+
+.page-header h1{
+	font-size: 40px;
+}
+
+.nav li {
+	margin-left:auto;
+   	margin-right:auto;
+}
+
+.intro, .projects, .contact {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.profile {
+	width: 100%;
+	padding-bottom: 20px;
 }
 
 .intro h1 {
 	margin-bottom: 20px;
+	text-align: center;
 }
 
 .intro p {
-	font-size: 17px;
-}
-
-
-.intro, .projects, .contact {
-	padding-left: 30px;
-	margin-bottom: 50px;
-}
-
-.profile {
-	width: 350px;
-	float: left;
-	margin-right: 20px;
-	margin-bottom: 10px;
+	font-size: 16px;
 }
 
 aside h1 {
-	text-align: center;
-	padding: 20px 0px 0px 30px;
+	margin-top: 30px;
 	margin-bottom: 20px;
-	animation-name: example;
-    animation-duration: 5s;
-    animation-iteration-count: 3;
 }
-
- @keyframes example {
-    from {color: orange;}
-    to {color: white;}
-}
-
 
 .icon {
 	width: 60px;
-	position: absolute;
-}
-
-
-.stackO {
-	left: 99px;
-}
-
-.github {
-	left: 48px;
-}
-
-.linkedin {
-	left: -1px;
+	margin: 0px;
 }
 
 .icon:hover {
-	top: 5px;
+	position: relative;
+	bottom: 5px;
+}
+
+.project-pics img {
+	width: 95%;
+	border-radius: 5%;
+	border: ridge 10px #EBEBEB;
+	margin-top: 20px;
+}
+
+.projects h2 {
+	text-align: center;
+	margin-top: 5px;
+	margin-bottom: 10px;	
+}
+
+.gif {
+	height: 75%;
+}
+
+label {
+	font-size: 16px;
+	margin-top: 20px;
+}
+
+.contact input, textarea {
+	background-color:#EBEBEB;
+	color: black;	
+	width: 98%;
+}
+
+.btn {
+	margin-top: 10px;
+	font-size: 13px;
+	height: 24px;
+	font-weight: bold;
+}
+
+button:active {
+	font-size: 15px;
+	height: 26px;
 }
 
 footer {
@@ -99,160 +142,66 @@ footer {
 	border-top: 10px solid #DF691A;
 }
 
-.contact h1 {
-	font-size: 30px;
-}
 
-label {
-	font-size: 16px;
-	margin-top: 20px;
+/*add media queries for responsive design*/
 
-}
-
-.contact input, textarea {
-	background-color:#EBEBEB;
-	color: black;
-	width: 95%;
-
-}
-
-.btn {
-	margin-top: 10px;
-	font-size: 13px;
-	padding-top: 1px;
-	padding-bottom: 1px;
-	font-weight: bold;
-}
-
-.projects img {
-	width: 95%;
-	border-radius: 5%;
-	border: ridge 10px #EBEBEB;
-	margin-top: 20px;
-}
-
-.projects h2 {
-	text-align: center;
-	margin-top: 5px;
-	margin-bottom: 10px;
-	color: #EBEBEB;
-	
-}
-
-.projects h2:hover{
-	color: #DF691A;
-}
-
-.gif {
-	height: 75%;
-}
-
-.container {
-	margin-bottom: 100px;
-}
-
-/*add media responsiveness control*/
-
-@media only screen and (max-width: 980px) {
-
-	.stackO {
-		left: 75px;
-	}
-
-	.github {
-		left: 41px;
-	}
-
-	.linkedin {
-		left: 5px;
-	}
-
-}
-
-@media only screen and (max-width: 768px) {
-	
-	.container-fluid {
+@media only screen and (min-width: 768px) { 
+	.icon {
 		position: relative;
-		bottom: 50px;
-	}
-
-	aside {
-		margin-top: 15px;
-		margin-bottom: 100px;
-		right: 20px;
-	}
-
-	.nav {
-		position: relative;
-		left: 380px;
-	}
-	
-	.page-header h1 {
-		position: relative;
-		top: 45px;
-	}
-
-	.page-header, .intro {
-		padding-left: 10px;
 	}
 
 	.stackO {
-		left: 280px;
+		right: 30px;
 	}
 
-	.github {
-		left: 360px;
+	.github{
+		right: 5px;
 	}
-
 	.linkedin {
-		left: 440px;
-	}
-}
-
-@media only screen and (max-width: 640px) {
-	
-	.intro {
-		padding-left: 0px;
-	}
-
-	.page-header h1 {
-		text-align: center;
-		top: 20px;
-		height: 60px;
-
+		left: 20px;
 	}
 	
-	.intro h1, .contact h1, .projects h1 {
-		text-align: center;
+	.col-md-8 h1 {
+		text-align: left;
 	}
+ }
 
-	.nav {
-		top: 6px;
-		position: relative;
-		left: 0px;
-		padding-left: 165px;
-	}
 
+@media (min-width: 980px) { 
 	.profile {
-		width: 100%;
-		padding: 10px;
-	}
-
-	.intro p {
-		clear: both;
-		padding-left:10px;
+		float:left;
+		width: 50%;
+		margin-right: 10px;
+		padding-bottom: 0px;
 	}
 	
-	.stackO {
-		left: 220px;
+	.nav {
+		position: relative;
+		top: 6px;
 	}
 
-	.github {
-		left: 300px;
+	.page-header h1 {
+		font-size: 45px;
+	}
+	
+	.intro, .projects, .contact {
+		padding-left: 40px;
 	}
 
-	.linkedin {
-		left: 380px;
+	.intro h1 {
+		font-size: 32px;
+	}
+	.intro p {
+		font-size: 18px;
+	}
+
+}
+
+@media (min-width: 1200px) { 
+
+	.intro, .projects, .contact {
+		padding-left: 100px;
+		padding-right: 50px;
 	}
 
 }
