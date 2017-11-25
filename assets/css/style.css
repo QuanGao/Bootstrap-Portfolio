@@ -164,6 +164,10 @@ footer {
 	.col-md-8 h1 {
 		text-align: left;
 	}
+
+	.intro, .contact, .projects {
+		padding-left: 25px;
+	}
  }
 
 
