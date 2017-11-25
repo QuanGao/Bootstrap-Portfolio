@@ -47,16 +47,26 @@ h1 {
 	margin-bottom: 10px;
 }
 
-aside h1{
+aside h1 {
 	text-align: center;
 	padding: 20px 0px 0px 30px;
 	margin-bottom: 20px;
+	animation-name: example;
+    animation-duration: 5s;
+    animation-iteration-count: 3;
 }
+
+ @keyframes example {
+    from {color: orange;}
+    to {color: white;}
+}
+
 
 .icon {
 	width: 60px;
 	position: absolute;
 }
+
 
 .stackO {
 	left: 99px;
