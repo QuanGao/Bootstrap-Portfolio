@@ -1,2 +1,2 @@
-# Bootstrap-Portfolio
-hw-2-2
+# Quan Gao's Portforlio Page
+Use HTML, CSS and Bootstrap build personal website showcasing projects.
