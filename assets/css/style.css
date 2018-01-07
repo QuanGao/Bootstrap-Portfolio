@@ -109,11 +109,11 @@ label {
 	margin-top: 20px;
 }
 
-.contact input, textarea {
+.contact input, .contact textarea {
 	background-color:#EBEBEB;
-	color: black;	
-	width: 98%;
-}
+	font-size: 14px;
+
+} 
 
 .btn {
 	margin-top: 10px;

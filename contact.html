@@ -31,40 +31,16 @@
 			<div class = "col-lg-6 col-md-8 col-sm-12">			
 				<h1> Contact </h1>
 				<form>
-					<div class= "row" >
-						<div class="col-md-12">
-							<label>  Name </label> 
-						</div>
-					</div>
-					<div class = "row">
-						<div class="col-md-12">
-							<input type = "text" name="name">
-						</div>
-					</div>
-
-					<div class= "row" >
-						<div class="col-md-12">
-							<label>  Email </label> 
-						</div>
-					</div>					
-					<div class = "row">
-						<div class="col-md-12">
-							<input type = "email" name = "email">
-						</div>
-					</div>
-
-					<div class= "row" >
-						<div class="col-md-12">
-							<label> Message </label> 
-						</div>
-					</div>	
-					<div class = "row">
-						<div class="col-md-12">
-							 <textarea name ="msg" cols = "95" rows = "15"></textarea>
-						</div>
+					<div class = "form-group">
+						<label for="inputName">Name</label>
+						<input type="text" class = "form-control" id="inputName" placeholder="First, Last">
+						<label for="inputEmail">Email</label>
+						<input type="email" class = "form-control" id="inputEmail" placeholder="JohnSmith798@wonderland.com">
+						<small class="form-text text-muted">You email address is safe with me :)</small>
+						<label for="inputMessage">Message</label>
+						<textarea class="form-control" id="inputMessage" rows = "10" placeholder="Hey Quan,"></textarea> 
 					</div>
 				</form>
-				<button type="submit" class="btn btn-default">Submit</button>
 		    </div>			
 			<aside class = "col-lg-3 col-md-4 col-sm-12 col-12">
 				<h1>Connect with Me</h1>	
